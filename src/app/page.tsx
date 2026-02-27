@@ -21,24 +21,24 @@ export default function Home() {
       {/* Screen 1: Full-screen hero with parallax background */}
       <HeroSection />
       
-      {/* Scrolling logo ticker */}
-      <TrustBar />
-      
       {/* Screen 2: Video showcase with YouTube embed */}
       <VideoShowcase />
       
-      {/* Screen 3: Full-screen parallax photo divider */}
+      {/* Screen 3: Platform features with tabbed interface */}
+      <TabbedPlatform />
+      
+      {/* Scrolling logo ticker */}
+      <TrustBar />
+      
+      {/* Screen 4: Full-screen parallax photo divider */}
       <FullScreenParallax 
         image="/images/data-visualization.jpeg"
         title="Redefine What's Possible"
         subtitle="Transform complex spatial data into powerful insights that drive real business outcomes"
       />
       
-      {/* Screen 4: Image showcase with parallax scroll effects */}
+      {/* Screen 5: Image showcase with parallax scroll effects */}
       <ImageShowcase />
-      
-      {/* Screen 5: Platform features with tabbed interface */}
-      <TabbedPlatform />
       
       {/* Screen 6: Full-screen parallax photo divider */}
       <FullScreenParallax 
