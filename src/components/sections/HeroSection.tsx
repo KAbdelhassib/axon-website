@@ -67,21 +67,11 @@ export function HeroSection() {
           style={{ opacity: contentOpacity, scale: contentScale }}
           className="text-center max-w-5xl mx-auto"
         >
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <span className="inline-block px-6 py-2 border-2 border-primary/30 text-primary text-xs font-black uppercase tracking-[0.3em] mb-8">
-              Agentic AI Platform by QuantorX
-            </span>
-          </motion.div>
-
           {/* Powered by QuantorX */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             className="flex items-center justify-center gap-3 mb-8"
           >
             <span className="text-gray-500 text-sm uppercase tracking-widest font-semibold">
@@ -100,11 +90,9 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-8 tracking-tight leading-tight"
           >
-            AI-POWERED
+            AGENTIC AI
             <br />
-            <span className="text-gradient">SPATIAL</span>
-            <br />
-            INTELLIGENCE
+            <span className="text-gradient">GIS PLATFORM</span>
           </motion.h1>
 
           <motion.p
@@ -113,8 +101,8 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-lg md:text-xl text-gray-400 mb-12 leading-relaxed max-w-2xl mx-auto font-light"
           >
-            AXON AI Assistant transforms how teams work with spatial data.
-            An agentic AI platform built for enterprise — designed for everyone.
+            Transform how your teams work with spatial data through intelligent automation.
+            Built for enterprise scale, designed for effortless collaboration.
           </motion.p>
 
           <motion.div
