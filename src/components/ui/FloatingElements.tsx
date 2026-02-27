@@ -25,12 +25,13 @@ export function FloatingElements({
     lg: 'w-32 h-32',
   };
 
+  // Use deterministic positions based on index to avoid hydration mismatch
   const elements = [...Array(count)].map((_, i) => ({
     id: i,
-    x: Math.random() * 80 + 10, // 10-90%
-    y: Math.random() * 80 + 10,
-    delay: Math.random() * 2,
-    duration: 15 + Math.random() * 10,
+    x: 10 + ((i * 37 + 13) % 80),  // pseudo-random but deterministic 10-90%
+    y: 10 + ((i * 53 + 29) % 80),
+    delay: (i * 0.4) % 2,
+    duration: 15 + (i * 2.3) % 10,
   }));
 
   return (
