@@ -69,31 +69,31 @@ export function HeroSection() {
         >
           {/* Left Column - Content */}
           <div className="lg:col-span-2 space-y-6">
-            <motion.h1
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tight leading-[1.1]"
-            >
-              AGENTIC AI <span className="text-gradient">GIS INTELLIGENCE PLATFORM</span>
-            </motion.h1>
-
             {/* Powered by QuantorX */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
               className="flex items-center gap-2"
             >
-              <span className="text-gray-500 text-xs uppercase tracking-wide font-semibold">
+              <span className="text-gray-500 text-xs uppercase tracking-wide font-medium">
                 Powered by
               </span>
               <img
                 src="/images/quantorx-logo.svg"
                 alt="QuantorX"
-                className="h-8 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity"
+                className="h-7 brightness-0 invert opacity-70 hover:opacity-100 transition-opacity"
               />
             </motion.div>
+
+            <motion.h1
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tight leading-[1.1]"
+            >
+              AGENTIC AI <span className="text-gradient">GIS INTELLIGENCE PLATFORM</span>
+            </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, x: -30 }}
@@ -109,14 +109,14 @@ export function HeroSection() {
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col sm:flex-row gap-3"
             >
-              <Button variant="primary" size="lg" className="group px-8 py-4">
-                START FREE TRIAL
-                <ArrowRight className="ml-2 group-hover:translate-x-2 transition-transform" size={18} />
+              <Button variant="primary" className="group px-5 py-2.5 text-sm font-semibold">
+                Start Free Trial
+                <ArrowRight className="ml-2 group-hover:translate-x-2 transition-transform" size={16} />
               </Button>
-              <Button variant="outline" size="lg" className="px-8 py-4">
-                WATCH DEMO
+              <Button variant="outline" className="px-5 py-2.5 text-sm font-semibold">
+                Watch Demo
               </Button>
             </motion.div>
 
@@ -142,13 +142,16 @@ export function HeroSection() {
             {/* Laptop Mockup */}
             <div className="relative">
               {/* Laptop Screen */}
-              <div className="relative bg-gradient-to-b from-gray-600 via-gray-700 to-gray-800 rounded-t-xl p-3 shadow-2xl">
+              <div className="relative bg-gradient-to-b from-gray-700 via-gray-800 to-gray-900 rounded-t-2xl p-3 shadow-2xl">
+                {/* Camera notch */}
+                <div className="absolute top-3 left-1/2 -translate-x-1/2 w-16 h-1 bg-gray-950 rounded-full z-10" />
+                
                 {/* Screen Bezel */}
-                <div className="bg-gray-900 rounded-lg overflow-hidden border border-gray-700">
+                <div className="bg-black rounded-xl overflow-hidden border-2 border-gray-900 shadow-inner">
                   {/* Video Container */}
                   <div className="relative aspect-video bg-black">
                     <iframe
-                      src="https://www.youtube.com/embed/wcdPpCdPtoI?si=WCuBN-3yVAOiophQ"
+                      src="https://www.youtube.com/embed/JGLFUndOtvY?si=zbEmFl_ysLGzgjaj"
                       title="AXON Platform Demo"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       referrerPolicy="strict-origin-when-cross-origin"
@@ -160,14 +163,22 @@ export function HeroSection() {
               </div>
               
               {/* Laptop Base/Keyboard */}
-              <div className="relative h-4 bg-gradient-to-b from-gray-600 to-gray-700 rounded-b-xl shadow-2xl">
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-800/30 to-transparent" />
-                {/* Trackpad indicator */}
-                <div className="absolute bottom-1 left-1/2 -translate-x-1/2 w-16 h-0.5 bg-gray-500 rounded-full" />
+              <div className="relative">
+                {/* Main keyboard body */}
+                <div className="relative h-8 bg-gradient-to-b from-gray-700 via-gray-800 to-gray-900 shadow-2xl" style={{ transform: 'perspective(1000px) rotateX(-2deg)', transformOrigin: 'top' }}>
+                  {/* Keyboard texture overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-b from-gray-700/50 to-gray-900/80" />
+                  
+                  {/* Trackpad */}
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-4 bg-gray-800/60 rounded-lg border border-gray-700/50" />
+                </div>
+                
+                {/* Bottom edge with rounded corners */}
+                <div className="h-1 bg-gradient-to-b from-gray-900 to-gray-950 rounded-b-2xl shadow-xl" />
               </div>
               
               {/* Laptop Shadow */}
-              <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-[95%] h-3 bg-black/40 blur-xl rounded-full" />
+              <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-[90%] h-4 bg-black/50 blur-xl rounded-full" />
             </div>
           </motion.div>
         </motion.div>
