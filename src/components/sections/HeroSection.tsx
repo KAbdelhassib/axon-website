@@ -140,7 +140,7 @@ export function HeroSection() {
             <div className="absolute -inset-4 bg-primary/10 blur-3xl" />
             <div className="relative aspect-video border-2 border-gray-800 hover:border-primary/50 transition-all duration-500 overflow-hidden shadow-2xl shadow-primary/20 rounded-sm">
               <iframe
-                src="https://www.youtube.com/embed/7ofBz1dqSJo?si=JHe-qWk24kS4V_K3"
+                src="https://www.youtube.com/embed/wcdPpCdPtoI?si=WCuBN-3yVAOiophQ"
                 title="AXON Platform Demo"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
