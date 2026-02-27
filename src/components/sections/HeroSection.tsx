@@ -69,31 +69,31 @@ export function HeroSection() {
         >
           {/* Left Column - Content */}
           <div className="lg:col-span-2 space-y-6">
-            <motion.h1
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tight leading-[1.1]"
-            >
-              AGENTIC AI <span className="text-gradient">GIS INTELLIGENCE PLATFORM</span>
-            </motion.h1>
-
             {/* Powered by QuantorX */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
               className="flex items-center gap-2"
             >
-              <span className="text-gray-500 text-xs uppercase tracking-wide font-semibold">
+              <span className="text-gray-500 text-xs uppercase tracking-wide font-medium">
                 Powered by
               </span>
               <img
                 src="/images/quantorx-logo.svg"
                 alt="QuantorX"
-                className="h-8 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity"
+                className="h-7 brightness-0 invert opacity-70 hover:opacity-100 transition-opacity"
               />
             </motion.div>
+
+            <motion.h1
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tight leading-[1.1]"
+            >
+              AGENTIC AI <span className="text-gradient">GIS INTELLIGENCE PLATFORM</span>
+            </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, x: -30 }}
