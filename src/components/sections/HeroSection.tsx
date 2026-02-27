@@ -65,69 +65,92 @@ export function HeroSection() {
       <Container className="relative z-10">
         <motion.div
           style={{ opacity: contentOpacity, scale: contentScale }}
-          className="text-center max-w-5xl mx-auto"
+          className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto"
         >
-          {/* Powered by QuantorX */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex items-center justify-center gap-3 mb-8"
-          >
-            <span className="text-gray-500 text-sm uppercase tracking-widest font-semibold">
-              Powered by
-            </span>
-            <img
-              src="/images/quantorx-logo.svg"
-              alt="QuantorX"
-              className="h-10 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity"
-            />
-          </motion.div>
+          {/* Left Column - Content */}
+          <div className="space-y-8">
+            {/* Powered by QuantorX */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="flex items-center gap-3"
+            >
+              <span className="text-gray-500 text-sm uppercase tracking-widest font-semibold">
+                Powered by
+              </span>
+              <img
+                src="/images/quantorx-logo.svg"
+                alt="QuantorX"
+                className="h-10 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity"
+              />
+            </motion.div>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
+            <motion.h1
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight"
+            >
+              AGENTIC AI
+              <br />
+              <span className="text-gradient">GIS PLATFORM</span>
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="text-lg md:text-xl text-gray-400 leading-relaxed font-light"
+            >
+              Transform how your teams work with spatial data through intelligent automation.
+              Built for enterprise scale, designed for effortless collaboration.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="flex flex-col sm:flex-row gap-6"
+            >
+              <Button variant="primary" size="lg" className="group text-lg px-10 py-5">
+                Start Free Trial
+                <ArrowRight className="ml-2 group-hover:translate-x-2 transition-transform" size={22} />
+              </Button>
+              <Button variant="outline" size="lg" className="text-lg px-10 py-5">
+                Watch Demo
+              </Button>
+            </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 1 }}
+              className="text-sm text-gray-600 uppercase tracking-wider"
+            >
+              No credit card required • 14-day free trial
+            </motion.p>
+          </div>
+
+          {/* Right Column - Video */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-8 tracking-tight leading-tight"
+            className="relative"
           >
-            AGENTIC AI
-            <br />
-            <span className="text-gradient">GIS PLATFORM</span>
-          </motion.h1>
-
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-lg md:text-xl text-gray-400 mb-12 leading-relaxed max-w-2xl mx-auto font-light"
-          >
-            Transform how your teams work with spatial data through intelligent automation.
-            Built for enterprise scale, designed for effortless collaboration.
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-col sm:flex-row gap-6 justify-center items-center"
-          >
-            <Button variant="primary" size="lg" className="group text-lg px-10 py-5">
-              Start Free Trial
-              <ArrowRight className="ml-2 group-hover:translate-x-2 transition-transform" size={22} />
-            </Button>
-            <Button variant="outline" size="lg" className="text-lg px-10 py-5">
-              Watch Demo
-            </Button>
+            <div className="absolute -inset-4 bg-primary/10 blur-2xl" />
+            <div className="relative aspect-video border-4 border-gray-800 hover:border-primary/50 transition-colors duration-500 overflow-hidden">
+              <iframe
+                src="https://www.youtube.com/embed/QekVEzVntpw?si=O8wgI-C8zRMk-gVX"
+                title="AXON Platform Demo"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
           </motion.div>
-
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1 }}
-            className="mt-8 text-sm text-gray-600 uppercase tracking-wider"
-          >
-            No credit card required • 14-day free trial
-          </motion.p>
         </motion.div>
       </Container>
 
