@@ -65,7 +65,7 @@ export function HeroSection() {
       <Container className="relative z-10">
         <motion.div
           style={{ opacity: contentOpacity, scale: contentScale }}
-          className="grid lg:grid-cols-5 gap-12 items-center max-w-7xl mx-auto"
+          className="grid lg:grid-cols-5 gap-20 items-center max-w-7xl mx-auto"
         >
           {/* Left Column - Content */}
           <div className="lg:col-span-2 space-y-6">
@@ -142,9 +142,9 @@ export function HeroSection() {
             {/* Laptop Mockup */}
             <div className="relative">
               {/* Laptop Screen */}
-              <div className="relative bg-gray-950 rounded-t-xl p-3 shadow-2xl">
+              <div className="relative bg-gradient-to-b from-gray-600 via-gray-700 to-gray-800 rounded-t-xl p-3 shadow-2xl">
                 {/* Screen Bezel */}
-                <div className="bg-black rounded-lg overflow-hidden border-2 border-gray-800">
+                <div className="bg-gray-900 rounded-lg overflow-hidden border border-gray-700">
                   {/* Video Container */}
                   <div className="relative aspect-video bg-black">
                     <iframe
@@ -160,10 +160,10 @@ export function HeroSection() {
               </div>
               
               {/* Laptop Base/Keyboard */}
-              <div className="relative h-4 bg-gradient-to-b from-gray-900 to-gray-950 rounded-b-xl shadow-2xl">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              <div className="relative h-4 bg-gradient-to-b from-gray-600 to-gray-700 rounded-b-xl shadow-2xl">
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-800/30 to-transparent" />
                 {/* Trackpad indicator */}
-                <div className="absolute bottom-1 left-1/2 -translate-x-1/2 w-16 h-0.5 bg-gray-800 rounded-full" />
+                <div className="absolute bottom-1 left-1/2 -translate-x-1/2 w-16 h-0.5 bg-gray-500 rounded-full" />
               </div>
               
               {/* Laptop Shadow */}
