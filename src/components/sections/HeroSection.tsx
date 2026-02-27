@@ -65,45 +65,41 @@ export function HeroSection() {
       <Container className="relative z-10">
         <motion.div
           style={{ opacity: contentOpacity, scale: contentScale }}
-          className="grid lg:grid-cols-5 gap-16 items-center max-w-7xl mx-auto"
+          className="grid lg:grid-cols-5 gap-12 items-center max-w-7xl mx-auto"
         >
           {/* Left Column - Content */}
-          <div className="lg:col-span-2 space-y-8">
+          <div className="lg:col-span-2 space-y-6">
             <motion.h1
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight"
+              className="text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tight leading-[1.1]"
             >
-              AGENTIC AI
-              <br />
-              <span className="text-gradient">GIS INTELLIGENCE</span>
-              <br />
-              <span className="text-gradient">PLATFORM</span>
+              AGENTIC AI <span className="text-gradient">GIS INTELLIGENCE PLATFORM</span>
             </motion.h1>
 
             {/* Powered by QuantorX */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="flex items-center gap-3"
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="flex items-center gap-2"
             >
-              <span className="text-gray-500 text-sm uppercase tracking-widest font-semibold">
+              <span className="text-gray-500 text-xs uppercase tracking-wide font-semibold">
                 Powered by
               </span>
               <img
                 src="/images/quantorx-logo.svg"
                 alt="QuantorX"
-                className="h-10 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity"
+                className="h-8 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity"
               />
             </motion.div>
 
             <motion.p
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="text-lg md:text-xl text-gray-400 leading-relaxed font-light"
+              transition={{ duration: 0.8, delay: 0.5 }}
+              className="text-base md:text-lg text-gray-400 leading-relaxed font-light"
             >
               Transform how your teams work with spatial data through intelligent automation.
               Built for enterprise scale, designed for effortless collaboration.
@@ -112,23 +108,23 @@ export function HeroSection() {
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-              className="flex flex-col sm:flex-row gap-6"
+              transition={{ duration: 0.8, delay: 0.7 }}
+              className="flex flex-col sm:flex-row gap-4"
             >
-              <Button variant="primary" size="lg" className="group text-lg px-10 py-5">
-                Start Free Trial
-                <ArrowRight className="ml-2 group-hover:translate-x-2 transition-transform" size={22} />
+              <Button variant="primary" size="lg" className="group px-8 py-4">
+                START FREE TRIAL
+                <ArrowRight className="ml-2 group-hover:translate-x-2 transition-transform" size={18} />
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-10 py-5">
-                Watch Demo
+              <Button variant="outline" size="lg" className="px-8 py-4">
+                WATCH DEMO
               </Button>
             </motion.div>
 
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 1 }}
-              className="text-sm text-gray-600 uppercase tracking-wider"
+              transition={{ duration: 0.8, delay: 0.9 }}
+              className="text-xs text-gray-600 uppercase tracking-wider"
             >
               No credit card required • 14-day free trial
             </motion.p>
@@ -141,10 +137,10 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="lg:col-span-3 relative"
           >
-            <div className="absolute -inset-6 bg-primary/10 blur-3xl" />
-            <div className="relative aspect-video border-4 border-gray-800 hover:border-primary/50 transition-all duration-500 overflow-hidden shadow-2xl shadow-primary/20">
+            <div className="absolute -inset-4 bg-primary/10 blur-3xl" />
+            <div className="relative aspect-video border-2 border-gray-800 hover:border-primary/50 transition-all duration-500 overflow-hidden shadow-2xl shadow-primary/20 rounded-sm">
               <iframe
-                src="https://www.youtube.com/embed/QekVEzVntpw?si=O8wgI-C8zRMk-gVX"
+                src="https://www.youtube.com/embed/7ofBz1dqSJo?si=JHe-qWk24kS4V_K3"
                 title="AXON Platform Demo"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
