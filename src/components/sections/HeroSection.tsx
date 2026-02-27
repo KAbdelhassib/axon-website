@@ -65,7 +65,7 @@ export function HeroSection() {
       <Container className="relative z-10">
         <motion.div
           style={{ opacity: contentOpacity, scale: contentScale }}
-          className="grid lg:grid-cols-5 gap-20 items-center max-w-7xl mx-auto"
+          className="grid lg:grid-cols-5 gap-28 items-center max-w-7xl mx-auto"
         >
           {/* Left Column - Content */}
           <div className="lg:col-span-2 space-y-6">
