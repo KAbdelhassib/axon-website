@@ -77,11 +77,28 @@ export function HeroSection() {
             </span>
           </motion.div>
 
+          {/* Powered by QuantorX */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="flex items-center justify-center gap-3 mb-8"
+          >
+            <span className="text-gray-500 text-sm uppercase tracking-widest font-semibold">
+              Powered by
+            </span>
+            <img
+              src="/images/quantorx-logo.svg"
+              alt="QuantorX"
+              className="h-10 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity"
+            />
+          </motion.div>
+
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 tracking-tight leading-tight"
+            className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-8 tracking-tight leading-tight"
           >
             AI-POWERED
             <br />
@@ -89,23 +106,6 @@ export function HeroSection() {
             <br />
             INTELLIGENCE
           </motion.h1>
-
-          {/* Powered by QuantorX */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="flex items-center justify-center gap-3 mb-8"
-          >
-            <span className="text-gray-500 text-xs uppercase tracking-widest font-semibold">
-              Powered by
-            </span>
-            <img
-              src="/images/quantorx-logo.svg"
-              alt="QuantorX"
-              className="h-6 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity"
-            />
-          </motion.div>
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
