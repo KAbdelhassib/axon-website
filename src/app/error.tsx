@@ -57,11 +57,9 @@ export default function Error({
               <RefreshCw className="mr-2 group-hover:rotate-180 transition-transform duration-500" size={20} />
               Try Again
             </Button>
-            <Link href="/">
-              <Button variant="outline" size="lg" className="w-full sm:w-auto">
+            <Link href="/" className="inline-flex items-center justify-center font-bold transition-all duration-300 border-2 border-primary text-primary hover:bg-primary hover:text-black px-8 py-4 text-lg uppercase tracking-wider w-full sm:w-auto">
                 <Home className="mr-2" size={20} />
                 Go Home
-              </Button>
             </Link>
           </div>
 

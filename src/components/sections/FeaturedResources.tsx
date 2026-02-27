@@ -82,15 +82,13 @@ export function FeaturedResources() {
                 {resource.description}
               </p>
 
-              <Link href={resource.downloadUrl}>
-                <Button variant="outline" className="w-full group">
+              <Link href={resource.downloadUrl} className="inline-flex items-center justify-center font-bold transition-all duration-300 border-2 border-primary text-primary hover:bg-primary hover:text-black px-6 py-3 text-base uppercase tracking-wider w-full group">
                   <Download size={18} strokeWidth={2.5} className="mr-2" />
                   Download now
                   <ArrowRight 
                     size={16} 
                     className="ml-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" 
                   />
-                </Button>
               </Link>
             </motion.div>
           ))}
@@ -103,11 +101,9 @@ export function FeaturedResources() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <Link href="/resources">
-            <Button size="lg" className="group">
+          <Link href="/resources" className="inline-flex items-center justify-center font-bold transition-all duration-300 bg-primary text-black hover:shadow-glow-strong px-8 py-4 text-lg uppercase tracking-wider group">
               View all resources
               <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
           </Link>
         </motion.div>
       </Container>

@@ -192,14 +192,12 @@ export function TabbedPlatform() {
                 ))}
               </ul>
 
-              <Link href={content.cta.href}>
-                <Button variant="outline" className="group">
+              <Link href={content.cta.href} className="inline-flex items-center justify-center font-bold transition-all duration-300 border-2 border-primary text-primary hover:bg-primary hover:text-black px-6 py-3 text-base uppercase tracking-wider group">
                   {content.cta.text}
                   <ArrowRight 
                     size={18} 
                     className="ml-2 group-hover:translate-x-1 transition-transform" 
                   />
-                </Button>
               </Link>
             </div>
 

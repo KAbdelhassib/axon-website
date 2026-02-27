@@ -26,16 +26,12 @@ export default function NotFound() {
 
           {/* Actions */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/">
-              <Button variant="primary" size="lg" className="group w-full sm:w-auto">
+            <Link href="/" className="inline-flex items-center justify-center font-bold transition-all duration-300 bg-primary text-black hover:shadow-glow-strong px-8 py-4 text-lg uppercase tracking-wider group w-full sm:w-auto">
                 <Home className="mr-2 group-hover:scale-110 transition-transform" size={20} />
                 Go Home
-              </Button>
             </Link>
-            <Link href="/contact">
-              <Button variant="outline" size="lg" className="w-full sm:w-auto">
+            <Link href="/contact" className="inline-flex items-center justify-center font-bold transition-all duration-300 border-2 border-primary text-primary hover:bg-primary hover:text-black px-8 py-4 text-lg uppercase tracking-wider w-full sm:w-auto">
                 Contact Support
-              </Button>
             </Link>
           </div>
 
