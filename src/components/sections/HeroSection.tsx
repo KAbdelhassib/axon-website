@@ -130,23 +130,44 @@ export function HeroSection() {
             </motion.p>
           </div>
 
-          {/* Right Column - Video (Wider) */}
+          {/* Right Column - Video in Laptop Mockup */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="lg:col-span-3 relative"
+            className="lg:col-span-3 relative scale-110"
           >
-            <div className="absolute -inset-4 bg-primary/10 blur-3xl" />
-            <div className="relative aspect-video border-2 border-gray-800 hover:border-primary/50 transition-all duration-500 overflow-hidden shadow-2xl shadow-primary/20 rounded-sm">
-              <iframe
-                src="https://www.youtube.com/embed/wcdPpCdPtoI?si=WCuBN-3yVAOiophQ"
-                title="AXON Platform Demo"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-                className="w-full h-full"
-              />
+            <div className="absolute -inset-8 bg-primary/10 blur-3xl" />
+            
+            {/* Laptop Mockup */}
+            <div className="relative">
+              {/* Laptop Screen */}
+              <div className="relative bg-gray-950 rounded-t-xl p-3 shadow-2xl">
+                {/* Screen Bezel */}
+                <div className="bg-black rounded-lg overflow-hidden border-2 border-gray-800">
+                  {/* Video Container */}
+                  <div className="relative aspect-video bg-black">
+                    <iframe
+                      src="https://www.youtube.com/embed/wcdPpCdPtoI?si=WCuBN-3yVAOiophQ"
+                      title="AXON Platform Demo"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                      className="w-full h-full"
+                    />
+                  </div>
+                </div>
+              </div>
+              
+              {/* Laptop Base/Keyboard */}
+              <div className="relative h-4 bg-gradient-to-b from-gray-900 to-gray-950 rounded-b-xl shadow-2xl">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                {/* Trackpad indicator */}
+                <div className="absolute bottom-1 left-1/2 -translate-x-1/2 w-16 h-0.5 bg-gray-800 rounded-full" />
+              </div>
+              
+              {/* Laptop Shadow */}
+              <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-[95%] h-3 bg-black/40 blur-xl rounded-full" />
             </div>
           </motion.div>
         </motion.div>
