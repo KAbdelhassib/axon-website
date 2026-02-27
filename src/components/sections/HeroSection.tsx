@@ -65,15 +65,28 @@ export function HeroSection() {
       <Container className="relative z-10">
         <motion.div
           style={{ opacity: contentOpacity, scale: contentScale }}
-          className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto"
+          className="grid lg:grid-cols-5 gap-16 items-center max-w-7xl mx-auto"
         >
           {/* Left Column - Content */}
-          <div className="space-y-8">
+          <div className="lg:col-span-2 space-y-8">
+            <motion.h1
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight"
+            >
+              AGENTIC AI
+              <br />
+              <span className="text-gradient">GIS INTELLIGENCE</span>
+              <br />
+              <span className="text-gradient">PLATFORM</span>
+            </motion.h1>
+
             {/* Powered by QuantorX */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
               className="flex items-center gap-3"
             >
               <span className="text-gray-500 text-sm uppercase tracking-widest font-semibold">
@@ -85,17 +98,6 @@ export function HeroSection() {
                 className="h-10 brightness-0 invert opacity-60 hover:opacity-100 transition-opacity"
               />
             </motion.div>
-
-            <motion.h1
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight"
-            >
-              AGENTIC AI
-              <br />
-              <span className="text-gradient">GIS PLATFORM</span>
-            </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, x: -30 }}
@@ -132,15 +134,15 @@ export function HeroSection() {
             </motion.p>
           </div>
 
-          {/* Right Column - Video */}
+          {/* Right Column - Video (Wider) */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="relative"
+            className="lg:col-span-3 relative"
           >
-            <div className="absolute -inset-4 bg-primary/10 blur-2xl" />
-            <div className="relative aspect-video border-4 border-gray-800 hover:border-primary/50 transition-colors duration-500 overflow-hidden">
+            <div className="absolute -inset-6 bg-primary/10 blur-3xl" />
+            <div className="relative aspect-video border-4 border-gray-800 hover:border-primary/50 transition-all duration-500 overflow-hidden shadow-2xl shadow-primary/20">
               <iframe
                 src="https://www.youtube.com/embed/QekVEzVntpw?si=O8wgI-C8zRMk-gVX"
                 title="AXON Platform Demo"
